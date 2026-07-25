@@ -1,4 +1,4 @@
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap');
 
 *{
@@ -411,4 +411,102 @@ footer{
     border-radius:30px;
     cursor:pointer;
     font-size:16px;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .hero{
+        height:70vh;
+        padding:20px;
+    }
+
+    .hero h2{
+        font-size:38px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about{
+        flex-direction:column;
+        padding:60px 20px;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:250px;
+        height:250px;
+    }
+
+    .products{
+        padding:60px 20px;
+    }
+
+    .products h2{
+        font-size:38px;
+        text-align:center;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .card img{
+        height:300px;
+    }
+
+    .cart{
+        padding:60px 20px;
+    }
+
+    .cart-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .cart-item img{
+        width:180px;
+        height:180px;
+    }
+
+    .total{
+        text-align:center;
+    }
+
+    .contact{
+        padding:60px 20px;
+    }
+
+    .contact h2{
+        font-size:38px;
+    }
+
+    .contact-form{
+        width:100%;
+    }
+
+    footer{
+        padding:20px;
+        font-size:14px;
+    }
 }
