@@ -1,0 +1,414 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3ede5;
+    color:#3d342f;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#f3ede5;
+}
+
+.logo{
+    text-align:center;
+}
+
+.logo h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    font-weight:600;
+}
+
+.logo p{
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#3d342f;
+}
+
+.btn-nav{
+    background:#e7c8c8;
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:url("../images/hero.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text{
+    color:white;
+    background:rgba(0,0,0,0.15);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:70px;
+    max-width:700px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:100px 10%;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+}
+
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* Banner */
+
+.banner{
+    height:250px;
+    background:url("../images/banner.jpg") center/cover no-repeat;
+}
+
+/* Products */
+
+.products{
+    padding:100px 10%;
+}
+
+.products h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:55px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:160px 160px 0 0;
+    border:2px solid #d6c4b7;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:32px;
+    margin-top:15px;
+}
+
+.card p{
+    margin:15px 0;
+    font-size:22px;
+}
+
+.card button{
+    border:none;
+    background:#e7c8c8;
+    padding:14px 40px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    transform:translateY(-3px);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .about{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:45px;
+    }
+
+    .products h2{
+        font-size:40px;
+    }
+
+}
+footer{
+    text-align:center;
+    padding:30px;
+    background:#e7ddd3;
+}
+/* Panier */
+
+.cart{
+    padding:80px 10%;
+    min-height:70vh;
+}
+
+.cart h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.cart-item img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.total{
+    margin-top:40px;
+    text-align:right;
+}
+
+.total h3{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.total button{
+    border:none;
+    background:#e7c8c8;
+    padding:15px 35px;
+    border-radius:30px;
+    cursor:pointer;
+}
+.products{
+    padding:80px 10%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    margin:10px 0;
+}
+
+.card button{
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+    background:#e7c8c8;
+}
+/* Contact */
+
+.contact{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:50px;
+    margin-bottom:40px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:1px solid #d6c4b7;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-form button{
+    border:none;
+    background:#e7c8c8;
+    padding:15px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#3d342f;
+    font-weight:500;
+}
+.card{
+    width:320px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 10px;
+    font-size:28px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.card p{
+    padding:0 15px;
+    color:#666;
+    line-height:1.5;
+    min-height:80px;
+}
+
+.card h4{
+    color:#d46a8c;
+    font-size:24px;
+    margin:15px 0;
+}
+
+.card button{
+    background:#e7c8c8;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#d9a9a9;
+}
+#order-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:30px;
+}
+
+#order-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+#order-form button{
+    padding:15px;
+    background:#e7c8c8;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
