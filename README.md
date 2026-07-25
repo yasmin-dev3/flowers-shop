@@ -24,11 +24,11 @@ Le projet est responsive et compatible avec les appareils mobiles.
 
 ## Démo
 
-🌐 https://yasmin-dev3.github.io/TON-NOM-DE-DEPOT/
+🌐 https://yasmin-dev3.github.io/flowers-shop/
 
 ## Code source
 
-💻 https://github.com/Yasmin-dev3/TON-NOM-DE-DEPOT
+💻 https://github.com/Yasmin-dev3/flowers-shop/
 
 ## Auteur
 
