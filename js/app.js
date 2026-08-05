@@ -1,10 +1,10 @@
-// Récupérer les boutons
+
 const buttons = document.querySelectorAll(".add-to-cart");
 
-// Tableau du panier
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Ajouter un produit au panier
+
 buttons.forEach(button => {
 
     button.addEventListener("click", () => {
@@ -22,7 +22,7 @@ buttons.forEach(button => {
     });
 
 });
-// Affichage du panier
+
 const cartItems = document.getElementById("cart-items");
 const total = document.getElementById("total");
 
