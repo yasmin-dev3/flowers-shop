@@ -493,3 +493,16 @@ footer{
         font-size:14px;
     }
 }
+.remove-btn{
+    background:#d9534f;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:auto;
+}
+
+.remove-btn:hover{
+    background:#c9302c;
+}

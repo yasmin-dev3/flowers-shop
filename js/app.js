@@ -30,19 +30,30 @@ if (cartItems && total) {
 
     let somme = 0;
 
-    cart.forEach(product => {
+    cart.forEach((product, index) => {
 
         const item = document.createElement("div");
         item.className = "cart-item";
 
-        item.innerHTML = `
-            <div>
-                <h3>${product.name}</h3>
-                <p>${product.price} DA</p>
-            </div>
-        `;
+       item.innerHTML = `
+    <div>
+        <h3>${product.name}</h3>
+        <p>${product.price} DA</p>
+    </div>
+
+    <button class="remove-btn">Supprimer</button>
+`;
 
         cartItems.appendChild(item);
+        item.querySelector(".remove-btn").addEventListener("click", () => {
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    location.reload();
+
+});
 
         somme += product.price;
     });
